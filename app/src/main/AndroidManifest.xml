@@ -38,11 +38,7 @@
         <activity android:name=".calender.CalenderActivity" />
         <activity android:name=".contacts.ContactsActivity" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <receiver
@@ -103,9 +99,15 @@
 
         <activity android:name=".file_directory.FileActivity" />
         <activity android:name=".bluetooth.BluetoothActivity" />
-        <activity android:name=".bottomsheet.BottomSheetActivity"></activity>
-        <activity android:name=".fab.FabActivity">
+        <activity android:name=".bottomsheet.BottomSheetActivity" />
+        <activity android:name=".fab.FabActivity" />
+        <activity android:name=".ColorActivity" />
+        <activity android:name=".EpochTimeConverterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
