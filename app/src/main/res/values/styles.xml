@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:minHeight">@dimen/screen_button_height</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+    <style name="Theme.MyCompatTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/winBackground</item>
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+    </style>
+
+    <style name="ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/background</item>
+        <item name="background">@color/background</item>
+    </style>
+
+    <color name="winBackground">#98cb4a</color>
+    <color name="background">#f76d3c</color>
+
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">#065E52</item>
+        <item name="colorPrimaryDark">#054E43</item>
+        <item name="colorAccent">#96BCB7</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionBarStyle">@style/AppBarOverlay</item>
+    </style>
+    <style name="AppBarOverlay" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="elevation">0dp</item>
+    </style>
+</resources>
