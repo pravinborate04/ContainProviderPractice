@@ -19,5 +19,6 @@ public class App extends Application {
        // registerActivityLifecycleCallbacks(new ActivityTracker());
        // MA.init(this,"http://52.87.24.173/api/","4170b44d6459bba992acaa857ac5b25d7fac6cc1");
 
+
     }
 }

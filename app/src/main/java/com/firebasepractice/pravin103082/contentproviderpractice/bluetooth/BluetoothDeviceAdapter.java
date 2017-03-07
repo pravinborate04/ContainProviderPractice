@@ -1,6 +1,7 @@
 package com.firebasepractice.pravin103082.contentproviderpractice.bluetooth;
 
 import android.bluetooth.BluetoothDevice;
+
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
@@ -26,6 +27,7 @@ public class BluetoothDeviceAdapter extends ArrayAdapter<BluetoothADevice> {
 
 
     public BluetoothDeviceAdapter(Context context, List<BluetoothDevice> bluetoothADevices) {
+
         super(context, R.layout.device_single_row);
         this.mContext=context;
         layoutInflater=LayoutInflater.from(mContext);
@@ -48,6 +50,7 @@ public class BluetoothDeviceAdapter extends ArrayAdapter<BluetoothADevice> {
             holder.textView.setText(bluetoothADevices.get(position).getName());
         }else {
             holder.textView.setText(bluetoothADevices.get(position).getAddress());
+
 
         }
         return convertView;

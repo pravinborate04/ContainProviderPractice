@@ -28,6 +28,7 @@ public class BluetoothBroadCastReceiver extends BroadcastReceiver {
 
         String action=intent.getAction();
         Log.e("action",action);
+
         if (BluetoothAdapter.ACTION_STATE_CHANGED.equals(action)) {
             if(intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, -1)== BluetoothAdapter.STATE_OFF){
 
@@ -51,6 +52,7 @@ public class BluetoothBroadCastReceiver extends BroadcastReceiver {
             bluetoothADevice.setPhysicalAddress(device.getAddress());
             bluetoothADevice.setBondStatus(device.getBondState());
             avaiableDeviceListener.addBluetoothDevice(device);
+
         }
 
 

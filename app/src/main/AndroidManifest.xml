@@ -109,6 +109,7 @@
         <activity android:name=".ColorActivity" />
         <activity android:name=".EpochTimeConverterActivity"></activity>
         <activity android:name=".create_txt_with_body.CustomTxtFileCreateActivity"></activity>
+
     </application>
 
 </manifest>

@@ -23,6 +23,7 @@ import com.firebasepractice.pravin103082.contentproviderpractice.bottomsheet.Bot
 import com.firebasepractice.pravin103082.contentproviderpractice.calender.CalenderActivity;
 import com.firebasepractice.pravin103082.contentproviderpractice.contacts.ContactsActivity;
 import com.firebasepractice.pravin103082.contentproviderpractice.create_txt_with_body.CustomTxtFileCreateActivity;
+
 import com.firebasepractice.pravin103082.contentproviderpractice.fab.FabActivity;
 import com.firebasepractice.pravin103082.contentproviderpractice.file_directory.FileActivity;
 import com.firebasepractice.pravin103082.contentproviderpractice.hotspot.HotSpotActivity;
@@ -47,12 +48,14 @@ public class MainActivity extends AppCompatActivity {
     Button btnCalender, btnContacts, btnSearch, btnTransitions, btnWifiDirect, btnWifiOnly,btnHotspot,btnBlueTooth
             ,btnBottomSheet,btnFileDirectory,btnFab,btnCustomFile;
 
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         btnCustomFile=(Button)findViewById(R.id.btnCustomFile);
+
 
         btnCalender = (Button) findViewById(R.id.btnCalender);
         btnContacts = (Button) findViewById(R.id.btnContacts);
@@ -88,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
 
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -131,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
                         // Bluetooth is not enable :)
                         Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                         startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+
 
                     }else {
                         Intent intent = new Intent(MainActivity.this, BluetoothActivity.class);
